@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "Pause All Extensions",
+    "version": "1.0",
+  
+    "description": "Easily pause and unpause all other Firefox extensions.",
+  
+    "icons": {
+      "48": "icons/icon_48.svg",
+      "96": "icons/icon_96.svg"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*"],
+        "js": ["pause.js"]
+      }
+    ]
+  
+  }
+  
