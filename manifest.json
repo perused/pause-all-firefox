@@ -5,18 +5,21 @@
     "version": "1.0",
   
     "description": "Easily pause and unpause all other Firefox extensions.",
-  
+    "homepage_url": "https://github.com/perused/pause-all-firefox",
     "icons": {
       "48": "icons/icon-48.png",
       "96": "icons/icon-96.png"
     },
-  
-    "content_scripts": [
-      {
-        "matches": ["*://*.mozilla.org/*"],
-        "js": ["borderify.js"]
+
+    "permissions": [
+        "activeTab"
+      ],
+    
+      "browser_action": {
+        "default_icon": "icons/icon-48.png",
+        "default_title": "Pause All",
+        "default_popup": "popup/pause_all.html"
       }
-    ]
   
   }
   
