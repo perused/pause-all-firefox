@@ -7,14 +7,14 @@
     "description": "Easily pause and unpause all other Firefox extensions.",
   
     "icons": {
-      "48": "icons/icon_48.svg",
-      "96": "icons/icon_96.svg"
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
     },
   
     "content_scripts": [
       {
-        "matches": ["*"],
-        "js": ["pause.js"]
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["borderify.js"]
       }
     ]
   
